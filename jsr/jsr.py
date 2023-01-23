@@ -206,7 +206,8 @@ def index():
         padding_top="10%",
     )
 
-
+def api_test():
+    return {"Test": State}
 # Add state and page to the app.
 app = pc.App(state=State)
 app.add_page(index, title="Test JSR")
