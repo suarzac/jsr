@@ -13,4 +13,5 @@ frontend.zip
 backend.zip
 dist/*
 jsrenv/*
-__pycache__/*
+__pycache__/*.web
+pynecone.db
