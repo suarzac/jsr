@@ -12,3 +12,5 @@ poetry.lock
 frontend.zip
 backend.zip
 dist/*
+jsrenv/*
+__pycache__/*
