@@ -172,23 +172,28 @@ def index():
     )
 
 def topics():
-    return pc.vstack(
-        navbar(),
-        pc.hstack(
-            pc.button(
-                "Decrement",
-                color_scheme="red",
-                border_radius="1em",
-                on_click=State.decrement,
-            ),
-            pc.heading(State.count, font_size="2em"),
-            pc.button(
-                "Increment",
-                color_scheme="green",
-                border_radius="1em",
-                on_click=State.increment,
+    return pc.center(
+        pc.vstack(
+            navbar(),
+            selection(),
+            pc.divider(),
+            pc.hstack(
+                pc.button(
+                    "Decrement",
+                    color_scheme="red",
+                    border_radius="1em",
+                    on_click=State.decrement,
+                ),
+                pc.heading(State.count, font_size="2em"),
+                pc.button(
+                    "Increment",
+                    color_scheme="green",
+                    border_radius="1em",
+                    on_click=State.increment,
+                ),
             ),
         ),
+        padding_top="10%",
     )
 
 
