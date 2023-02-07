@@ -15,4 +15,4 @@ dist/*
 jsrenv/*
 __pycache__/*.web
 pynecone.db
-**/data/**.web
+**/data/**.web.web
